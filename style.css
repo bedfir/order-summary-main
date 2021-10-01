@@ -1,0 +1,238 @@
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+/*--------------- Variable ----------------------*/
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*--------------- General Content Styles ------------------*/
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #e0e8ff;
+  background-position: top;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 7rem;
+  width: 88%;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1) 15px 15px 30px rgba(56, 41, 224, 0.1);
+}
+.card .card__hero {
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+.card .card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.875rem;
+}
+.card .card__wrapper .card__title {
+  font-size: 1.263rem;
+  font-weight: 900;
+}
+.card .card__wrapper .card__description {
+  font-size: 0.938rem 0.625rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+  color: #7280a7;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.card .card__wrapper .card__plan {
+  background-color: #f5f7ff;
+  width: 100%;
+  border-radius: 0.938rem;
+  margin: 0.5rem 0;
+  padding: 1rem 0.75rem;
+}
+.card .card__wrapper .card__plan .card__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.card .card__wrapper .card__plan .payment__plan__card {
+  color: #1f2f56;
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+.card .card__wrapper .card__plan .price__card {
+  color: #7280a7;
+  font-size: 0.875rem;
+  font-weight: 700;
+  opacity: 0.5;
+}
+.card .card__wrapper .card__plan a {
+  color: #3829e0;
+  font-size: 0.813rem;
+  font-weight: 700;
+}
+.card .card__wrapper .card__plan a:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+.card .card__wrapper .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.card .card__wrapper .btn__payment {
+  background-color: #3829e0;
+  padding: 0.938rem;
+  margin: 0.938rem;
+  color: #fff;
+  box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.15) 15px 15px 30px rgba(56, 41, 224, 0.15);
+  font-size: 0.938rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.625rem;
+}
+.card .card__wrapper .btn__payment:hover {
+  opacity: 0.7;
+}
+.card .card__wrapper .btn__cancel {
+  border: none;
+  background-color: #fff;
+  color: #7280a7;
+  font-size: 0.938rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.card .card__wrapper .btn__cancel:hover {
+  color: #1f2f56;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(../../images/pattern-background-desktop.svg);
+  }
+
+  .container {
+    align-items: center;
+  }
+  .container .card {
+    margin-top: unset;
+  }
+  .container .card-wrapper {
+    padding: 2.5rem 2.813rem;
+  }
+  .container .card-wrapper .card__title {
+    font-size: 1.75rem;
+  }
+  .container .card-wrapper .card__description {
+    font-size: 1rem;
+    line-height: 1.284rem;
+  }
+  .container .card-wrapper .card__plan {
+    padding: 1.263rem 1.275rem;
+    margin: 0.25rem;
+  }
+  .container .card-wrapper .card__plan .card__list {
+    gap: 1.263rem;
+  }
+  .container .card-wrapper .card__plan .card__list .payment__plan__card,
+.container .card-wrapper .card__plan .card__list .price__card {
+    font-size: 1rem;
+  }
+  .container .card-wrapper .card__plan .card__list a {
+    font-size: 0.938rem;
+  }
+  .container .card-wrapper .btn__payment {
+    margin: 1.875rem 0 1.5rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

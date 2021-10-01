@@ -1,0 +1,12 @@
+@import "libs/reset.scss";
+
+/*--------------- General Content Styles ------------------*/
+
+body {
+  font-family: $family;
+  background: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $pale-blue;
+  background-position: top;
+}

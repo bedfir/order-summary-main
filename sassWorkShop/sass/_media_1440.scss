@@ -1,0 +1,46 @@
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(../../images/pattern-background-desktop.svg);
+  }
+
+  .container {
+    align-items: center;
+
+    .card {
+      margin-top: unset;
+    }
+
+    .card-wrapper {
+      padding: 2.5rem 2.813rem;
+
+      .card__title {
+        font-size: 1.75rem;
+      }
+
+      .card__description {
+        font-size: 1rem;
+        line-height: 1.284rem;
+      }
+      .card__plan {
+        padding: 1.263rem 1.275rem;
+        margin: 0.25rem;
+
+        .card__list {
+          gap: 1.263rem;
+
+          .payment__plan__card,
+          .price__card {
+            font-size: 1rem;
+          }
+
+          a {
+            font-size: 0.938rem;
+          }
+        }
+      }
+      .btn__payment {
+        margin: 1.875rem 0 1.5rem 0;
+      }
+    }
+  }
+}

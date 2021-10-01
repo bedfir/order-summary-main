@@ -1,0 +1,121 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 7rem;
+  width: 88%;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 10px 10px 20px hsl(245, 75%, 52%, 0.1) 15px 15px 30px
+    hsl(245, 75%, 52%, 0.1);
+  .card__hero {
+    width: 100%;
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.875rem;
+
+    .card__title {
+      font-size: 1.263rem;
+      font-weight: $weight-black;
+    }
+
+    .card__description {
+      font-size: 0.938rem 0.625rem;
+      font-weight: 500;
+      text-align: center;
+      padding: 1rem;
+      color: $desaturated-blue;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    .card__plan {
+      background-color: $very-pale-blue;
+      width: 100%;
+      border-radius: 0.938rem;
+      margin: 0.5rem 0;
+      padding: 1rem 0.75rem;
+
+      .card__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.25rem;
+      }
+
+      .payment__plan__card {
+        color: $dark-blue;
+        font-size: 0.875rem;
+        font-weight: $weight-black;
+      }
+
+      .price__card {
+        color: $desaturated-blue;
+        font-size: 0.875rem;
+        font-weight: $weight-bold;
+        opacity: 0.5;
+      }
+
+      a {
+        color: $bright-blue;
+        font-size: 0.813rem;
+        font-weight: $weight-bold;
+
+        &:hover {
+          text-decoration: none;
+          opacity: 0.75;
+        }
+      }
+    }
+    .btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .btn__payment {
+      background-color: $bright-blue;
+      padding: 0.938rem;
+      margin: 0.938rem;
+      color: #fff;
+      box-shadow: 10px 10px 20px hsl(245, 75%, 52%, 0.15) 15px 15px 30px
+        hsl(245, 75%, 52%, 0.15);
+      font-size: 0.938rem;
+      font-weight: $weight-bold;
+      border: none;
+      border-radius: 0.625rem;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .btn__cancel {
+      border: none;
+      background-color: #fff;
+      color: $desaturated-blue;
+      font-size: 0.938rem;
+      font-weight: $weight-bold;
+      padding: 0.5rem;
+
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+}

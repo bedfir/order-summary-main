@@ -1,0 +1,26 @@
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+
+/*--------------- Variable ----------------------*/
+
+// ---Color
+
+// Primary
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+// Neutral
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+// ---Typography
+
+// Font
+$family: "Red Hat Display", sans-serif;
+$weight-medium: 500;
+$weight-bold: 700;
+$weight-black: 900;
+
+@import "general";
+@import "card";
+@import "media_1440";
